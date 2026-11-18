@@ -1,10 +1,8 @@
 import time
 
-
-# 1. Función para generar el peor caso (lista ordenada al revés)
 def generar_peor_caso(cantidad):
     inicio = time.perf_counter()
-    # Crea una lista descendente: [cantidad, cantidad-1, ..., 1]
+    
     datos = list(range(cantidad, 0, -1))
     fin = time.perf_counter()
     return datos, fin - inicio
